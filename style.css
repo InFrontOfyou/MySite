@@ -3,14 +3,25 @@
     margin: 0;
     font-family: 'Roboto Condensed', sans-serif;
 }
-body, html{
-    overflow-x: hidden;
-}
+
 nav{
     margin: 0 auto;
     max-width: 1100px;
     width: 100%;
 }
+
+.container {
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
+}
+
+main {
+    background: url("img/intro-img.jpg");
+    height: calc(100vh - 50px);
+    background-size: cover;
+}
+
 #checkbox-menu,
 .toggle{
     display: none;
@@ -43,46 +54,38 @@ nav{
     margin-right: 240px;
 }
 .menu li a.contacts{
-    margin-right: flex;
+
 }
-.wrapper{
-    margin: 0;
-    min-width: 1100px;
-    width: 100%;
+.wrapper {
+   padding: 15px;
 }
-.intro{
-    margin-top: 25px;
-    display: flex;
-    justify-content: flex-end;
+.intro {
+    position: relative;
 }
-.intro-img{
-    background-image: url(img/intro-img.jpg);
-    width: 2250px;
-    height: 1500px;
-}
+
 .intro .intro-text{
-    position: absolute;
-    font-size: 100px;
-    right: 750px;
-    top: 220px;
+    font-size: 6em;
 }
-.intro-contacts{
-    background-color: #ffcc01;
-    max-width: 1000px;
+
+.intro-contacts {
+    width: 100%;
     position: absolute;
-    right: 170px;
-    top: 1400px;
+    bottom: 0;
+    background-color: #ffcc01;
+}
+
+.row-contacts {
     display: flex;
     justify-content: space-between;
-    padding: 30px 50px;
 }
+
 .intro-contacts i{
     color: #fff;
     margin-right: 30px;
 }
 .intro-contacts p{
     font-size: 18px;
-    margin-right: 50px;
+    padding: 25px;
 }
 
 @media screen and (max-width: 765px) {
@@ -106,7 +109,7 @@ nav{
         transition: all .7s linear;
     } 
     #checkbox-menu:checked + label .touch {
-        height: 350px;
+        height: 300px;
     }
     .menu{
         display: flex;
@@ -139,31 +142,7 @@ nav{
         margin-right: 0px;
     }
 
-    .intro{
-        margin-top: 0;
-        display: black;
-        max-width: 100%;
-    }
-    .intro-img{
-        background-position: bottom 1px right 1px;
-    }
-    .intro .intro-text{
-        position: relative;
-        font-size: 35px;
-        right: -10px;
-        top:95px;
-    }
-    .intro .intro-contacts{
-        right: 0;
-        top: -60px;
-        padding: 20px 10px;
-        position: relative;
-    }
-    .intro-contacts i{
-        margin-right: 10px;
-    }
-    .intro-contacts{
-        font-size: 13px;
-        margin-right: 0;
+    .intro .intro-text {
+        font-size: 16px;
     }
 }
