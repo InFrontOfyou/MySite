@@ -161,7 +161,9 @@ main {
         opacity: 0;
         visibility: hidden;
     }
-
+    .row-contacts{
+        flex-direction: column;
+    }
     .menu li a{
         width: 95%;
         text-align: center;
